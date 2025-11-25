@@ -10,9 +10,88 @@ nav{
    height: 80px;
    display: flex;
 }
-
+.img{
+    width: 100%;
+}
 .nav__container{
    display: flex;
+   max-width: 1200px;
+   padding: 0 24px;
    width: 100%;
    justify-content: space-between;
+    align-items: center;
+   margin: 0 auto;
 }
+.purple {
+    color: rgb(130, 30, 130);
+}
+.logo {
+    width: 160px;
+}
+ul {
+    display: flex;
+}
+li {
+    list-style-type: none;
+}
+.nav__link {
+    margin-left: 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(130, 30, 130);
+    font-weight: bold;
+    padding: 8px;
+}
+.nav__link:hover {
+    text-decoration: underline;
+}
+.nav__link--primary {
+    border: 2px solid rgb(130, 30, 130);
+    border-radius: 4px;
+}
+.nav__link--primary:hover {
+   text-decoration: none;
+}
+#landing {
+    background-color: rgb(246, 223, 246);
+}
+header {
+    height: calc(100vh - 80px);
+}
+
+.header__container {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-aroundn;
+}
+h1 {
+    font-size: 56px;
+    margin-bottom: 24px;
+    color: rgb(130, 30, 130);
+    text-align: center;
+}
+h2 {
+    font-size: 32px;
+    color: black;
+    text-align: center;
+    margin-bottom: 32px;
+}
+button {
+    cursor: pointer;
+}
+button:active {
+    transform: translateY(1px);
+}
+.btn {
+    background-color: rgb(130, 30, 130);
+    color: white;
+    padding: 12px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+}
+
