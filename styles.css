@@ -260,6 +260,6 @@ bottom: 1px;
 
 .latest__books {
     display: flex;
-
+    flex-wrap: wrap;
     justify-content: center;
 }
