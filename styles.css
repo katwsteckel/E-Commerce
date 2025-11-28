@@ -79,20 +79,27 @@ li {
     font-size: 40px;
     text-align: center;
     border: none;
-    color: rgb(130, 30, 130); ;
+    color: rgb(130, 30, 130);
+    display: none;
 }
 
 .menu__backdrop {
     position: absolute;
     background-color: rgb(39, 35, 35);
     top: 0;
-    left 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     z-index: 100;
-    display: flex;
+   opacity: 0;
+   visibility: hidden;
     justify-content: center;
     align-items: center;
+    transition: all 300ms ease;
+}
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
 }
 .menu__list {
     padding: 32px 0;
@@ -363,4 +370,14 @@ bottom: 1px;
 }
 .footer__link {
     padding: 0 8px;
+}
+
+@media (max-width: 550px) {
+    .nav__links {
+        display: none;
+    }
+}
+
+.btn__menu {
+    display: block;
 }
